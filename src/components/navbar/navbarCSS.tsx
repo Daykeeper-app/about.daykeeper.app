@@ -51,7 +51,37 @@ export const NavbarLink = styled(NavLink)`
   }
 `
 
+export const NavbarAnchor = styled.a`
+  margin-right: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  color: var(--dk-slate);
+  font-size: 1.3em;
+  font-family: "Rota_SemiBold";
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--dk-slate);
+    border-bottom: 1px solid var(--dk-slate);
+  }
+`
+
 export const HamburguerMenuLink = styled(NavLink)`
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 10vw;
+  text-decoration: none;
+  color: var(--dk-slate);
+
+  &:active {
+    color: var(--dk-slate);
+  }
+`
+
+export const HamburguerMenuAnchor = styled.a`
   font-size: 2em;
   margin: 0;
   margin-bottom: 10vw;

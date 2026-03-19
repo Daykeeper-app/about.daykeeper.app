@@ -5,7 +5,9 @@ import {
   HamburguerMenu,
   HamburguerMenuIcon,
   NavbarLink,
+  NavbarAnchor,
   HamburguerMenuLink,
+  HamburguerMenuAnchor,
 } from "./navbarCSS"
 import "./transitions.css"
 
@@ -63,8 +65,8 @@ function Navbar() {
 
       <div className={`normal-items`}>
         <NavbarLink to="/">Home</NavbarLink>
-        <a href="/#sectionTwo">Overview</a>
-        <a href="/#sectionThree">Updates</a>
+        <NavbarAnchor href="/#sectionTwo">Overview</NavbarAnchor>
+        <NavbarAnchor href="/#sectionThree">Updates</NavbarAnchor>
         <NavbarLink to="/status">Status</NavbarLink>
         <NavbarLink to="/terms">Terms</NavbarLink>
       </div>
@@ -80,12 +82,12 @@ function Navbar() {
         <HamburguerMenuLink to="/" onClick={() => toggleMenu()}>
           Home
         </HamburguerMenuLink>
-        <a href="/#sectionTwo" onClick={() => toggleMenu()}>
+        <HamburguerMenuAnchor href="/#sectionTwo" onClick={() => toggleMenu()}>
           Overview
-        </a>
-        <a href="/#sectionThree" onClick={() => toggleMenu()}>
+        </HamburguerMenuAnchor>
+        <HamburguerMenuAnchor href="/#sectionThree" onClick={() => toggleMenu()}>
           Updates
-        </a>
+        </HamburguerMenuAnchor>
         <HamburguerMenuLink to="/status" onClick={() => toggleMenu()}>
           Status
         </HamburguerMenuLink>
